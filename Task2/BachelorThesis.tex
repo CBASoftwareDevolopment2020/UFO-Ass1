@@ -1,0 +1,31 @@
+\documentclass[a4paper]{article}
+
+\usepackage{src/sty/packages}
+\bibliographystyle{plain}
+
+\title{Bachelor Thesis}
+\author{Nikolaj Thorsen Nielsen}
+\date{\today}
+
+\begin{document}
+\listoftodos
+\maketitle
+\thispagestyle{empty}
+\clearpage
+\pagenumbering{arabic} 
+\input{src/tex/preface.tex}
+\tableofcontents
+\input{src/tex/abstract.tex}
+\input{src/tex/summary.tex}
+\input{src/tex/introduction.tex}
+\input{src/tex/background.tex}
+\input{src/tex/methods.tex}
+\input{src/tex/results.tex}
+\input{src/tex/discussion.tex}
+\input{src/tex/conclusion.tex}
+\input{src/tex/perspectives.tex}
+\bibliography{src/bib/changeme}
+\listoffigures
+\listoftables
+\input{src/tex/appendix}
+\end{document}
