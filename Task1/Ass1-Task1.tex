@@ -1,44 +1,86 @@
 \documentclass[a4paper]{article}
 
 \usepackage[ampersand]{easylist}
-\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[nottoc]{tocbibind}
 \usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
 
-\title{\href{https://datsoftlyngby.github.io/soft2020fall/resources/8af56d7d-assignment-01.pdf}{Assingment} 1}
+\bibliographystyle{plainnat}
+
+\title{\textbf{Undersøgelse og formidling}\\ Aflevering 1}
 \author{Nikolaj Nielsen}
 \date{\today}
 
 \begin{document}
-
 \maketitle
 \tableofcontents
 
-\section{Task 1}
-Find requirements of bachelor thesis. Write a \LaTeX -document explaining your
-findings. Document your sources.
+\section*{}
+Dette dokument har til formål at beskrive bachelorprojektets krav og formalia.
 
-\subsection{Bachelor thesis requirements}
+\section{Projekt}
+Projektet skal dokumentere forståelse af og evne til at reflektere over profesionens praksis samt anvendelse af teori og metode i relation til en praksisnær problemstilling. Problemstillingen, der er central for uddannelsen, formuleres af den studerende, eventuelt i samarbejde med en virksomhed \cite[§ 16, stk. 2, nr. 3]{professionsbachelor}. Uddannelsesinstitutionen skal godkende problemstillingen \cite[sektion 5.4]{studieordning}.
 
-\subsubsection{Structure}
-The Bachelor thesis should include: cover, table of content, main content (introduction, body, summary), references, and affidavit. The thesis might also include: list of abbreviations, list of figures, list of tables, list of symbols, appendix.\cite{unimannheim2014guidelines}
+\subsection{Formål}
+Formålet med projektet er, at dokumentere evnen til på et analytisk og metodisk grundlag at kunne arbejde med en kompleks og praksisnær problemstilling i relation til en konkret opgave inden for IT-området \cite[sektion 5.4]{studieordning}.
 
-\noindent The thesis should include: title page, table of contents, vocabulary of main concepts, introduction, report part (scientific literature review, methodology, empirical data analysis), conclusions and proposals, list of references, summary, and annexes.\cite{mru2018requirements}
+\subsection{Læringsmål}
+Projetet skal dokumentere at den studerende har opnået uddannelsens afgangsniveau \cite[sektion 5.4]{studieordning}.\\
+\textbf{Viden}. Den uddannede har viden om:
+\begin{itemize}
+\item den strategiske rolle af test i systemudviking
+\item globalisering af softwareproduktion
+\item systemarkitektur og forståelse af dens strategiske betydning for virksomhedens forretning
+\item anvendt teori og metode samt udbredte teknologier inden for domænet
+\item forskellige databasetyper og deres anvendelse
+\end{itemize}
+\textbf{Færdigheder}. Den studerende kan:
+\begin{itemize}
+\item integrere it-systemer og udvikle systemer, som understøtter fremtidig integration
+\item anvende kontrakter som en styrings- og koordineringsmekanisme i udviklingsprocessen
+\item vurdere og vælge databasesystemer, samt designe, redesigne og driftsoptimere databaser
+\item planlægge og styre udviklingsforløb med mange geografisk adskilte projektdeltagere
+\item håndtere planlægning og gennemførelse af test af større it-systemer
+\end{itemize}
+\textbf{Kompetencer}. Den uddannede kan:
+\begin{itemize}
+\item identificere sammenhænge mellem anvendt teori, metode og teknologi og kan reflektere over disses egnethed i forskellige situationer
+\item indgå professionelt i samarbejde omkring udvikling af store systemer ved anvendelse af udbredte metoder og teknologier
+\item sætte sig ind i nye teknologier og standarder til håndtering af integration mellem systemer
+\item gennem praksis udvikle egen kompetenceprofil fra primært at være en backend-udviklerprofil til at varetage opgaver som systemarkitekt
+\item håndtere fastlæggelse og realisering af en såvel forretningsmæssig som teknologisk hensigtsmæssig arkitektur for store systemer
+\end{itemize}
 
-\noindent It is suggested that the thesis include: front page, title page, preface, table of content, abstract, summary, introduction, background, methods, results, discussion, conclusions, perspectives, bibliography, and appendix.\cite{au2020guidelines}
+\section{Eksamen}
+Den studerende kan vælge at arbejde individuelt. Uanset om den projektet er udarbejdet i en gruppe, kan den studerende vælge at blive eksamineret individuelt \cite[§ 13]{eksamen}.\\
+Der skal foretages en individuel bedømmelse uagtet om man bliver eksamineret individuelt eller som gruppe \cite[§ 13, stk. 2]{eksamen}.\\\\
+Eksamen består af et projekt og en mundtlig det, og der gives én samlet karakter. Ydermere kan eksamen ikke finde sted før uddannelses øvrige eksaminer er bestået \cite[§ 15, stk. 1, nr. 3]{eksamen}.
 
-\subsubsection{References}
-All references that has been quoted or cited in the text have to be included in the reference list.\cite{unimannheim2014guidelines}
+\subsection{Bedømmelse}
+Grundlaget for bedømmelsen er den individuelle præstation \cite[§ 37]{eksamen}.\\
+Ved bedømmelsen af projektet vil der udover det faglige indhold blive lagt vægt på formulerings- og staveevne, det faglige indhold skal dog vægtes tungest. Der kan gives dispensation for dette, hvis den studerende kan dokumentere relevant funktionsnedsættelse \cite[§ 37, stk. 4]{eksamen}.
 
-\noindent It is important to give a reference when making statements from literature. Reference acknowledge the work of others, and provide information of the sources used.\cite{au2020guidelines}
+\subsection{Karakter}
+Den studerende bedømmes efter 7-trins-skalaen \cite[§ 1]{karakter}.
+\begin{table}[!t]
+\centering
+\begin{tabular}{|p{.1\textwidth}|p{.1\textwidth}|p{.2\textwidth}|p{.6\textwidth}|}\hline
+7-trins-skalaen&ETCS-skalaen&&\\\hline
+12&A&For den fremragende præstation&"Karakteren 12 gives for den fremragende præstation, der demonstrerer udtømmende opfyldelse af fagets, fag- eller uddannelseselementets mål, med ingen eller få uvæsentlige mangler." \cite[§ 2]{karakter}\\\hline
+10&B&For den fortrinlige præstation&"Karakteren 10 gives for den fortrinlige præstation, der demonstrerer omfattende opfyldelse af fagets, fag- eller uddannelseselementets mål, med nogle mindre væsentlige mangler." \cite[§ 3]{karakter}\\\hline
+7&C&For den gode præstation&"Karakteren 7 gives for den gode præstation, der demonstrerer opfyldelse af fagets, fag- eller uddannelseselementets mål, med en del mangler." \cite[§ 4]{karakter}\\\hline
+4&D&For den jævne præstation&"Karakteren 4 gives for den jævne præstation, der demonstrerer en mindre grad af opfyldelse af fagets, fag- eller uddannelseselementets mål, med adskillige væsentlige mangler." \cite[§ 5]{karakter}\\\hline
+02&E&For den tilstrækkelige præstation&"Karakteren 02 gives for den tilstrækkelige præstation, der demonstrerer den minimalt acceptable grad af opfyldelse af fagets, fag- eller uddannelseselementets mål." \cite[§ 6]{karakter}\\\hline
+00&Fx&For den utilstrækkelige præstation&"Karakteren 00 gives for den utilstrækkelige præstation, der ikke demonstrerer en acceptabel grad af opfyldelse af fagets, fag- eller uddannelseselementets mål." \cite[§ 7]{karakter}\\\hline
+-3&F&For den ringe præstation&"Karakteren -3 gives for den helt uacceptable præstation." \cite[§ 8]{karakter}\\\hline
+\end{tabular}
+\caption{7-trins-skalaen}\label{tab:7-trins-skalaen}
+\end{table}
+\\For at se betydningen af de forskellige karakterer se Tabel \ref{tab:7-trins-skalaen} på side \pageref{tab:7-trins-skalaen}
 
-\subsubsection{Length}
-The content part of the thesis should span 20 to 35 pages. The thesis should be as short as possible, but as extensive as necessary, while still within this range.\cite{unimannheim2014guidelines}
-
-\noindent The thesis should be between 40 and 50 pages, not including title page, table of content, and  list of references.\cite{mru2018requirements}
-
-\noindent The thesis contains maximum 100 pages, not including front page, table of content, bibliography, appendix, figures, tables, and models.\cite{au2020guidelines}
-
-\bibliographystyle{plain}
+\listoffigures
+\listoftables
 \bibliography{Ass1-Task1-References}
 
 \end{document}
